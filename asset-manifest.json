@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ricky-morty-app-test/static/css/main.7acaea2f.css",
+    "main.js": "/ricky-morty-app-test/static/js/main.f6cdf716.js",
+    "index.html": "/ricky-morty-app-test/index.html",
+    "main.7acaea2f.css.map": "/ricky-morty-app-test/static/css/main.7acaea2f.css.map",
+    "main.f6cdf716.js.map": "/ricky-morty-app-test/static/js/main.f6cdf716.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.f6cdf716.js"
+  ]
+}
