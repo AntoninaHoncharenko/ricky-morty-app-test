@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { HeroImage } from 'components/HeroImage/HeroImage';
-import { HerosFinder } from 'components/HerosFinder/HerosFinder';
+import { HeroFinder } from 'components/HerosFinder/HeroFinder';
 import { fetchAllCharacters } from 'api';
 import { CharactersList } from 'components/HeroList/HeroList';
 import { Container } from './MainPage.styled';
@@ -40,7 +40,7 @@ const MainPage = () => {
   return (
     <Container>
       <HeroImage />
-      <HerosFinder onChange={onChange} query={query} />
+      <HeroFinder onChange={onChange} query={query} />
       <CharactersList characters={filteredCharacters} />
     </Container>
   );
