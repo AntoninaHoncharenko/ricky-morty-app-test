@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Finder = styled.input`
-  width: 1020px;
+  width: 312px;
   height: 56px;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -13,6 +13,10 @@ export const Finder = styled.input`
 
   ::placeholder {
     margin-left: 28px;
+  }
+
+  @media screen and (min-width: 1050px) {
+    width: 1020px;
   }
 `;
 
@@ -26,5 +30,9 @@ export const Wrap = styled.div`
     left: 20px;
   }
 
-  margin-bottom: 61px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1050px) {
+    margin-bottom: 61px;
+  }
 `;
