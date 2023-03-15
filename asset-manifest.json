@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/ricky-morty-app-test/static/css/main.7acaea2f.css",
-    "main.js": "/ricky-morty-app-test/static/js/main.afbd872d.js",
-    "static/js/121.46df08c8.chunk.js": "/ricky-morty-app-test/static/js/121.46df08c8.chunk.js",
-    "static/js/209.99593e81.chunk.js": "/ricky-morty-app-test/static/js/209.99593e81.chunk.js",
-    "static/js/801.9ba68062.chunk.js": "/ricky-morty-app-test/static/js/801.9ba68062.chunk.js",
+    "main.css": "/ricky-morty-app-test/static/css/main.c3d5249d.css",
+    "main.js": "/ricky-morty-app-test/static/js/main.1c2848f5.js",
+    "static/js/472.f751f3a3.chunk.js": "/ricky-morty-app-test/static/js/472.f751f3a3.chunk.js",
+    "static/js/867.9d35e801.chunk.js": "/ricky-morty-app-test/static/js/867.9d35e801.chunk.js",
+    "static/js/673.4621174a.chunk.js": "/ricky-morty-app-test/static/js/673.4621174a.chunk.js",
+    "static/js/692.3074bf0d.chunk.js": "/ricky-morty-app-test/static/js/692.3074bf0d.chunk.js",
+    "static/js/820.e1132f6e.chunk.js": "/ricky-morty-app-test/static/js/820.e1132f6e.chunk.js",
     "static/media/heroimg.png": "/ricky-morty-app-test/static/media/heroimg.7119f9df7519fa43c7a0.png",
     "index.html": "/ricky-morty-app-test/index.html",
-    "main.7acaea2f.css.map": "/ricky-morty-app-test/static/css/main.7acaea2f.css.map",
-    "main.afbd872d.js.map": "/ricky-morty-app-test/static/js/main.afbd872d.js.map",
-    "121.46df08c8.chunk.js.map": "/ricky-morty-app-test/static/js/121.46df08c8.chunk.js.map",
-    "209.99593e81.chunk.js.map": "/ricky-morty-app-test/static/js/209.99593e81.chunk.js.map",
-    "801.9ba68062.chunk.js.map": "/ricky-morty-app-test/static/js/801.9ba68062.chunk.js.map"
+    "main.c3d5249d.css.map": "/ricky-morty-app-test/static/css/main.c3d5249d.css.map",
+    "main.1c2848f5.js.map": "/ricky-morty-app-test/static/js/main.1c2848f5.js.map",
+    "472.f751f3a3.chunk.js.map": "/ricky-morty-app-test/static/js/472.f751f3a3.chunk.js.map",
+    "867.9d35e801.chunk.js.map": "/ricky-morty-app-test/static/js/867.9d35e801.chunk.js.map",
+    "673.4621174a.chunk.js.map": "/ricky-morty-app-test/static/js/673.4621174a.chunk.js.map",
+    "692.3074bf0d.chunk.js.map": "/ricky-morty-app-test/static/js/692.3074bf0d.chunk.js.map",
+    "820.e1132f6e.chunk.js.map": "/ricky-morty-app-test/static/js/820.e1132f6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.afbd872d.js"
+    "static/css/main.c3d5249d.css",
+    "static/js/main.1c2848f5.js"
   ]
 }
