@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ricky-morty-app-test/static/css/main.c3d5249d.css",
-    "main.js": "/ricky-morty-app-test/static/js/main.6c992ade.js",
-    "static/js/472.93438fb3.chunk.js": "/ricky-morty-app-test/static/js/472.93438fb3.chunk.js",
+    "main.js": "/ricky-morty-app-test/static/js/main.bae55a83.js",
+    "static/js/588.ec53ec82.chunk.js": "/ricky-morty-app-test/static/js/588.ec53ec82.chunk.js",
     "static/js/867.88346f1a.chunk.js": "/ricky-morty-app-test/static/js/867.88346f1a.chunk.js",
     "static/js/673.4621174a.chunk.js": "/ricky-morty-app-test/static/js/673.4621174a.chunk.js",
     "static/js/692.3074bf0d.chunk.js": "/ricky-morty-app-test/static/js/692.3074bf0d.chunk.js",
@@ -10,8 +10,8 @@
     "static/media/heroimg.png": "/ricky-morty-app-test/static/media/heroimg.7119f9df7519fa43c7a0.png",
     "index.html": "/ricky-morty-app-test/index.html",
     "main.c3d5249d.css.map": "/ricky-morty-app-test/static/css/main.c3d5249d.css.map",
-    "main.6c992ade.js.map": "/ricky-morty-app-test/static/js/main.6c992ade.js.map",
-    "472.93438fb3.chunk.js.map": "/ricky-morty-app-test/static/js/472.93438fb3.chunk.js.map",
+    "main.bae55a83.js.map": "/ricky-morty-app-test/static/js/main.bae55a83.js.map",
+    "588.ec53ec82.chunk.js.map": "/ricky-morty-app-test/static/js/588.ec53ec82.chunk.js.map",
     "867.88346f1a.chunk.js.map": "/ricky-morty-app-test/static/js/867.88346f1a.chunk.js.map",
     "673.4621174a.chunk.js.map": "/ricky-morty-app-test/static/js/673.4621174a.chunk.js.map",
     "692.3074bf0d.chunk.js.map": "/ricky-morty-app-test/static/js/692.3074bf0d.chunk.js.map",
@@ -19,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.6c992ade.js"
+    "static/js/main.bae55a83.js"
   ]
 }
