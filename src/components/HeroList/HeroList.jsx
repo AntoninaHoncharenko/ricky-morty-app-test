@@ -1,23 +1,24 @@
 import { Link } from 'react-router-dom';
+import { List, Card, Image, Wrap, Name, Text } from './HeroList.styled';
 
 export const CharactersList = ({ characters }) => {
   return (
-    <div>
-      <ul>
+    <>
+      <List>
         {characters.map(char => {
           return (
             <Link to={`/${char.id}`} key={char.id}>
-              <li>
-                <div>
-                  <img src={char.image} alt="heroimage" />
-                  <p>{char.name}</p>
-                  <p>{char.species}</p>
-                </div>
-              </li>
+              <Card>
+                <Image src={char.image} alt="heroimage" />
+                <Wrap>
+                  <Name>{char.name}</Name>
+                  <Text>{char.species}</Text>
+                </Wrap>
+              </Card>
             </Link>
           );
         })}
-      </ul>
-    </div>
+      </List>
+    </>
   );
 };

@@ -3,6 +3,7 @@ import { HeroImage } from 'components/HeroImage/HeroImage';
 import { HerosFinder } from 'components/HerosFinder/HerosFinder';
 import { fetchAllCharacters } from 'api';
 import { CharactersList } from 'components/HeroList/HeroList';
+import { Container } from './MainPage.styled';
 
 const MainPage = () => {
   const [characters, setCharacters] = useState([]);
@@ -37,11 +38,11 @@ const MainPage = () => {
   };
 
   return (
-    <div>
+    <Container>
       <HeroImage />
       <HerosFinder onChange={onChange} query={query} />
       <CharactersList characters={filteredCharacters} />
-    </div>
+    </Container>
   );
 };
 
