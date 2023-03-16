@@ -2,14 +2,14 @@ import { initializeApp } from 'firebase/app';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAAWXpyk2NYK34X6Wx_SAr08R8vWplH2AQ',
-  authDomain: 'authtest-6a692.firebaseapp.com',
-  projectId: 'authtest-6a692',
-  storageBucket: 'authtest-6a692.appspot.com',
-  messagingSenderId: '394726693612',
-  appId: '1:394726693612:web:6c81a6c968639d48f5e3c9',
+  apiKey: 'AIzaSyAqRtd7IayOOmvxoAMZQUZNELVO26_U8fc',
+  authDomain: 'authrm-dc58d.firebaseapp.com',
+  projectId: 'authrm-dc58d',
+  storageBucket: 'authrm-dc58d.appspot.com',
+  messagingSenderId: '775713275927',
+  appId: '1:775713275927:web:632a5b724a9c82b8cc1c52',
 };
 
 export const app = initializeApp(firebaseConfig);
 
-export const googleAuthProvider = new GoogleAuthProvider();
+export const provider = new GoogleAuthProvider();

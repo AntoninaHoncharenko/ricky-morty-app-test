@@ -42,7 +42,7 @@ const HeroDetails = () => {
 
   return (
     <Container>
-      <BackLink to={location.state?.from ?? '/'}>
+      <BackLink to={location.state?.from ?? '/main'}>
         <BiLeftArrowAlt size="32" color="#000000" />
         <BackText>GO BACK</BackText>
       </BackLink>

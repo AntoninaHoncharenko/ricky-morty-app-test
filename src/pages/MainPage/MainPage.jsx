@@ -3,17 +3,15 @@ import { HeroImage } from 'components/HeroImage/HeroImage';
 import { HeroFinder } from 'components/HerosFinder/HeroFinder';
 import { fetchAllCharacters } from 'api';
 import { CharactersList } from 'components/HeroList/HeroList';
-import { Container } from './MainPage.styled';
-
-import { Auth } from 'components/Auth/Auth';
-import { getAuth, signInWithPopup } from 'firebase/auth';
-import { app, googleAuthProvider } from '../../firebase';
+import { Container, BackLink, BackText, UserName } from './MainPage.styled';
+import { BiLeftArrowAlt } from 'react-icons/bi';
+import { UserAuth } from 'context/AuthContext';
 
 const MainPage = () => {
   const [characters, setCharacters] = useState([]);
   const [filteredCharacters, setFilteredCharacters] = useState(characters);
   const [query, setQuery] = useState(localStorage.getItem('query') || '');
-  const [user, setUser] = useState(null);
+  const { user, logOut } = UserAuth();
 
   useEffect(() => {
     async function getAllCharacters() {
@@ -42,19 +40,13 @@ const MainPage = () => {
     setQuery(event.target.value);
   };
 
-  const auth = getAuth(app);
-
-  const onLogIn = () => {
-    signInWithPopup(auth, googleAuthProvider)
-      .then(credentials => {
-        setUser(credentials.user);
-      })
-      .catch(error => console.log(error));
-  };
-
   return (
     <Container>
-      {user === null ? <Auth onLogIn={onLogIn} /> : <p>{user.displayName}</p>}
+      <BackLink to="/" onClick={logOut}>
+        <BiLeftArrowAlt size="32" color="#000000" />
+        <BackText>LOG OUT</BackText>
+      </BackLink>
+      {user && <UserName>Hello, {user}!</UserName>}
       <HeroImage />
       <HeroFinder onChange={onChange} query={query} />
       <CharactersList characters={filteredCharacters} />
