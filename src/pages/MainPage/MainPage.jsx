@@ -40,9 +40,20 @@ const MainPage = () => {
     setQuery(event.target.value);
   };
 
+  const handleLogOut = async () => {
+    try {
+      await logOut();
+      // if (user !== '') {
+      //   navigate('/main', { replace: true });
+      // }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <Container>
-      <BackLink to="/" onClick={logOut}>
+      <BackLink to="/" onClick={handleLogOut}>
         <BiLeftArrowAlt size="32" color="#000000" />
         <BackText>LOG OUT</BackText>
       </BackLink>

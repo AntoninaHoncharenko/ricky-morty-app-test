@@ -1,7 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useContext, createContext } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { getAuth, signInWithPopup } from 'firebase/auth';
+import {
+  getAuth,
+  onAuthStateChanged,
+  signInWithPopup,
+  signOut,
+} from 'firebase/auth';
 import { app, provider } from '../firebase';
 
 const AuthContext = createContext();
@@ -9,21 +13,28 @@ const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(localStorage.getItem('user') || '');
   const auth = getAuth(app);
-  const navigate = useNavigate();
 
   const logIn = () => {
-    signInWithPopup(auth, provider)
-      .then(result => {
-        setUser(result.user.displayName);
-        navigate('/main', { replace: true });
-        localStorage.setItem('user', result.user.displayName);
-      })
-      .catch(error => console.log(error));
+    signInWithPopup(auth, provider);
+    // .then(result => {
+    //   setUser(result.user.displayName);
+    //   localStorage.setItem('user', result.user.displayName);
+    // })
+    // .catch(error => console.log(error));
   };
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, user => {
+      setUser(user.displayName);
+      localStorage.setItem('user', user.displayName);
+    });
+    return () => unsubscribe();
+  }, [auth]);
 
   const logOut = () => {
     localStorage.setItem('user', '');
-    console.log('logOut');
+    setUser('');
+    signOut(auth);
   };
 
   return (
