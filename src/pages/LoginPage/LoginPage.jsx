@@ -23,7 +23,7 @@ const LoginPage = () => {
     if (user !== '') {
       navigate('/main', { replace: true });
     }
-  }, [user]);
+  }, [user, navigate]);
 
   return (
     <Container>
