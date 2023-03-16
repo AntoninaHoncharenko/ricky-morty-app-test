@@ -5,10 +5,15 @@ import { fetchAllCharacters } from 'api';
 import { CharactersList } from 'components/HeroList/HeroList';
 import { Container } from './MainPage.styled';
 
+import { Auth } from 'components/Auth/Auth';
+import { getAuth, signInWithPopup } from 'firebase/auth';
+import { app, googleAuthProvider } from '../../firebase';
+
 const MainPage = () => {
   const [characters, setCharacters] = useState([]);
   const [filteredCharacters, setFilteredCharacters] = useState(characters);
   const [query, setQuery] = useState(localStorage.getItem('query') || '');
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     async function getAllCharacters() {
@@ -37,13 +42,23 @@ const MainPage = () => {
     setQuery(event.target.value);
   };
 
+  const auth = getAuth(app);
+
+  const onLogIn = () => {
+    signInWithPopup(auth, googleAuthProvider)
+      .then(credentials => {
+        setUser(credentials.user);
+      })
+      .catch(error => console.log(error));
+  };
+
   return (
     <Container>
+      {user === null ? <Auth onLogIn={onLogIn} /> : <p>{user.displayName}</p>}
       <HeroImage />
       <HeroFinder onChange={onChange} query={query} />
       <CharactersList characters={filteredCharacters} />
     </Container>
   );
 };
-
 export default MainPage;
