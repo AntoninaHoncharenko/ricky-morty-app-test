@@ -11,9 +11,6 @@ const LoginPage = () => {
   const handleLogIn = async () => {
     try {
       await logIn();
-      // if (user !== '') {
-      //   navigate('/main', { replace: true });
-      // }
     } catch (error) {
       console.log(error);
     }

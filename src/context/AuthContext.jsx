@@ -16,15 +16,13 @@ export const AuthContextProvider = ({ children }) => {
 
   const logIn = () => {
     signInWithPopup(auth, provider);
-    // .then(result => {
-    //   setUser(result.user.displayName);
-    //   localStorage.setItem('user', result.user.displayName);
-    // })
-    // .catch(error => console.log(error));
   };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, user => {
+      if (!user) {
+        return;
+      }
       setUser(user.displayName);
       localStorage.setItem('user', user.displayName);
     });

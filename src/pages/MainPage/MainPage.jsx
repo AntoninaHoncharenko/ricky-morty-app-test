@@ -43,9 +43,6 @@ const MainPage = () => {
   const handleLogOut = async () => {
     try {
       await logOut();
-      // if (user !== '') {
-      //   navigate('/main', { replace: true });
-      // }
     } catch (error) {
       console.log(error);
     }
