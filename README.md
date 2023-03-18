@@ -1,8 +1,8 @@
-ricky-morty-app-test
+# ricky-morty-app-test
 
 This project was created with Create React App.
 
-Installation
+## Installation
 
 - Run npm install to install the dependencies.
 - Run npm start to start the app.
